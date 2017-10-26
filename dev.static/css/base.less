@@ -1,0 +1,24 @@
+.base {
+  color: red;
+}
+@keyframes flag_wave {
+    0%{
+        transform: rotate(0deg);
+    }
+    30%{
+        transform: rotate(-30deg);
+    }
+    55%{
+        transform: rotate(5deg);
+    }
+    85%{
+        transform: rotate(-15deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.quick_op_w_flag:hover, .quick_op_r_flag:hover{
+    animation: flag_wave 0.4s ease-in-out;
+    transform-origin:left bottom;
+}
